@@ -1,0 +1,27 @@
+.container {
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto 0 auto;
+    background-color: blue;
+}
+
+.title_section {
+    font-size: 2rem;
+    text-align: center;
+    background-color: purple;
+}
+
+
+#page_title {
+    font-size: 1em;
+    background-color: red;
+    color: white;
+}
+
+#page_title_description {
+    font-size: 0.5em;
+    text-align:center;
+    background-color: yellow;
+    color: grey;
+}
+
