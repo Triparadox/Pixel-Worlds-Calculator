@@ -1,11 +1,15 @@
 .container {
-    width: 80vw;
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
     margin: 0 auto 0 auto;
     background-color: blue;
 }
 
 .title_section {
+    width: 80%;
+    height: fit-content;
     font-size: 2rem;
     text-align: center;
     background-color: purple;
@@ -14,6 +18,7 @@
 
 #page_title {
     font-size: 1em;
+    width: 100%;
     background-color: red;
     color: white;
 }
