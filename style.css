@@ -2,13 +2,15 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction:column;
+    justify-content: flex-start;
     margin: 0 auto 0 auto;
+    align-items:center;
     background-color: blue;
 }
 
 .title_section {
-    width: 80%;
+    width: 90%;
     height: fit-content;
     font-size: 2rem;
     text-align: center;
@@ -30,3 +32,30 @@
     color: grey;
 }
 
+.content_section {
+    width: 90%;
+    height: fit-content;
+    font-size: 2rem;
+    text-align: center;
+    background-color: orange;
+}
+
+.fish_img {
+    transform: scale(1.5);
+    margin:0 1em 0 1em;
+}
+
+.fish_amount {
+    height:1.5rem;
+    width:5rem;
+    margin:0 1em 0 1em;
+}
+
+.result_section {
+    width: 90%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    background-color: green;
+    align-items: center;
+}

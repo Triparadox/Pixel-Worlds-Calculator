@@ -5,6 +5,7 @@
     <title>PW Calculator Tool</title>
     <link rel="icon" type="image/x-icon" href="assets/icons/gem_website_icon.ico">
     <link rel="stylesheet" href="style.css">
+    <script src="calculate.js"></script>
 </head>
 <body>
     <div class="container">
@@ -21,11 +22,94 @@
                 * Contains table for user to enter data.
                 * JavaScript will access the information entered here.
             -->
+            <div class="kingfish_section" inputmode="numeric">
+                <img src="assets/icons/kingfish_huge.png" class="fish_img">
+                <input type="number" class="fish_amount" id="kingfish_huge_amount" placeholder="Huge">
+                <input type="number" class="fish_amount" id="kingfish_large_amount" placeholder="Large">
+                <input type="number" class="fish_amount" id="kingfish_medium_amount" placeholder="Medium">
+                <input type="number" class="fish_amount" id="kingfish_small_amount" placeholder="Small">
+                <input type="number" class="fish_amount" id="kingfish_tiny_amount" placeholder="Tiny">
+            </div>
+
+            <div class="herring_section" inputmode="numeric">
+                <img src="assets/icons/herring_huge.png" class="fish_img">
+                <input type="number" class="fish_amount" id="herring_huge_amount" placeholder="Huge">
+                <input type="number" class="fish_amount" id="herring_large_amount" placeholder="Large">
+                <input type="number" class="fish_amount" id="herring_medium_amount" placeholder="Medium">
+                <input type="number" class="fish_amount" id="herring_small_amount" placeholder="Small">
+                <input type="number" class="fish_amount" id="herring_tiny_amount" placeholder="Tiny">
+            </div>
+
+            <div class="goldfish_section" inputmode="numeric">
+                <img src="assets/icons/goldfish_huge.png" class="fish_img">
+                <input type="number" class="fish_amount" id="goldfish_huge_amount" placeholder="Huge">
+                <input type="number" class="fish_amount" id="goldfish_large_amount" placeholder="Large">
+                <input type="number" class="fish_amount" id="goldfish_medium_amount" placeholder="Medium">
+                <input type="number" class="fish_amount" id="goldfish_small_amount" placeholder="Small">
+                <input type="number" class="fish_amount" id="goldfish_tiny_amount" placeholder="Tiny">
+            </div>
+
+            <div class="butterflyfish_section" inputmode="numeric">
+                <img src="assets/icons/butterflyfish_huge.png" class="fish_img">
+                <input type="number" class="fish_amount" id="butterflyfish_huge_amount" placeholder="Huge">
+                <input type="number" class="fish_amount" id="butterflyfish_large_amount" placeholder="Large">
+                <input type="number" class="fish_amount" id="butterflyfish_medium_amount" placeholder="Medium">
+                <input type="number" class="fish_amount" id="butterflyfish_small_amount" placeholder="Small">
+                <input type="number" class="fish_amount" id="butterflyfish_tiny_amount" placeholder="Tiny">
+            </div>
+
+            <div class="halibut_section" inputmode="numeric">
+                <img src="assets/icons/halibut_huge.png" class="fish_img">
+                <input type="number" class="fish_amount" id="halibut_huge_amount" placeholder="Huge">
+                <input type="number" class="fish_amount" id="halibut_large_amount" placeholder="Large">
+                <input type="number" class="fish_amount" id="halibut_medium_amount" placeholder="Medium">
+                <input type="number" class="fish_amount" id="halibut_small_amount" placeholder="Small">
+                <input type="number" class="fish_amount" id="halibut_tiny_amount" placeholder="Tiny">
+            </div>
+
+            <div class="tuna_section" inputmode="numeric">
+                <img src="assets/icons/tuna_huge.png" class="fish_img">
+                <input type="number" class="fish_amount" id="tuna_huge_amount" placeholder="Huge">
+                <input type="number" class="fish_amount" id="tuna_large_amount" placeholder="Large">
+                <input type="number" class="fish_amount" id="tuna_medium_amount" placeholder="Medium">
+                <input type="number" class="fish_amount" id="tuna_small_amount" placeholder="Small">
+                <input type="number" class="fish_amount" id="tuna_tiny_amount" placeholder="Tiny">
+            </div>
+
+            <div class="acid_section" inputmode="numeric">
+                <img src="assets/icons/acid_huge.png" class="fish_img">
+                <input type="number" class="fish_amount" id="acid_huge_amount" placeholder="Huge">
+                <input type="number" class="fish_amount" id="acid_large_amount" placeholder="Large">
+                <input type="number" class="fish_amount" id="acid_medium_amount" placeholder="Medium">
+                <input type="number" class="fish_amount" id="acid_small_amount" placeholder="Small">
+                <input type="number" class="fish_amount" id="acid_tiny_amount" placeholder="Tiny">
+            </div>
+
+            <div class="angler_section" inputmode="numeric">
+                <img src="assets/icons/angler_huge.png" class="fish_img">
+                <input type="number" class="fish_amount" id="angler_huge_amount" placeholder="Huge">
+                <input type="number" class="fish_amount" id="angler_large_amount" placeholder="Large">
+                <input type="number" class="fish_amount" id="angler_medium_amount" placeholder="Medium">
+                <input type="number" class="fish_amount" id="angler_small_amount" placeholder="Small">
+                <input type="number" class="fish_amount" id="angler_tiny_amount" placeholder="Tiny">
+            </div>
+
+            <div class="crab_section" inputmode="numeric">
+                <img src="assets/icons/crab_huge.png" class="fish_img">
+                <input type="number" class="fish_amount" id="crab_huge_amount" placeholder="Huge">
+                <input type="number" class="fish_amount" id="crab_large_amount" placeholder="Large">
+                <input type="number" class="fish_amount" id="crab_medium_amount" placeholder="Medium">
+                <input type="number" class="fish_amount" id="crab_small_amount" placeholder="Small">
+                <input type="number" class="fish_amount" id="crab_tiny_amount" placeholder="Tiny">
+            </div>
+            
         </div>
         <div class="result_section">
             <!-- Output Section
                 * JavaScript outputs result here
             -->
+            <img src="assets/icons/gem_amount_icon.png">
+            <p id="output">0</p>
         </div>
     </div>
 </body>
