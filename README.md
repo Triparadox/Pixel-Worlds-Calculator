@@ -1,29 +1,3 @@
-<<<<<<< HEAD
-# pw-calculator
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
 This project is currently under work. As of now, to use the product, you must run the files locally on your machine.
 There is a plan to bring the website live and hosted once the project is in a ready state.
 
