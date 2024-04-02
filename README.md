@@ -7,4 +7,3 @@ The columns are ordered HUGE, LARGE, MEDIUM, SMALL, TINY. You may leave the colu
 The total is displayed at the bottom of the screen. It updates live as you change each column (no need to press submit button).
 
 More functionalities are expected to come. Gemstone calculator from mining may be the next major update.
->>>>>>> 1397252b8bcbd475f679d53142f047d90e3f075b
