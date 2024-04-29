@@ -1,22 +1,31 @@
-/* eslint-disable */
 <template>
-	<div v-for="(sizes, fishName) in fishValue" :key="fishName" class="fish_section" inputmode="numeric">
-  	<img :src="'assets/icons/' + fishName + '.png'" class="fish_img">
-  	<div v-for="(value, size) in sizes" :key="`${fishName}_${size}`">
-    	<input type="number" v-model.number="value[1]" @change="updateGem" :placeholder="size">
-  	</div>
+	<div class="container">
+		<div class="title_section">
+            <h1 id="page_title">Fish Gems Calculator</h1>
+            <p id="page_title_description">Enter the correct amount of fish for each species and size.</p>
+        </div>
+		<div class="content_section">
+			<div v-for="(sizes, fishName) in fishValue" :key="fishName" :class="`{$fishName}_section`" inputmode="numeric">
+				<img :src="getFishImage(fishName)" class="fish_img">
+				<input v-for="(value, size) in sizes" :key="`${fishName}_${size}`" type="number" v-model.number="value[1]" class="fish_amount" @change="updateGem" :placeholder="size">
+			</div>
+		</div>
+		<div class="result_section">
+            <img :src="getGemImage()">
+            <p id="output">{{ gemCounter }}</p>
+        </div>
 	</div>
 </template>
 
 <script>
-	import "./assets/style.css";
+	import './assets/style.css';
 	export default {
 		data() {
 			return {
 				fishValue: {
 					"kingfish": {
 						"huge": [300, 0],
-			      "large": [100, 0],
+			    		"large": [100, 0],
 						"medium": [70, 0],
 						"small": [40, 0],
 						"tiny": [10, 0]
@@ -83,6 +92,12 @@
 		},
 		methods: {
 			// Vue JS methods go here
+			getGemImage() {
+				return require(`./assets/drawables/gem_amount_icon.png`)
+			},
+			getFishImage(fishName) {
+				return require(`./assets/drawables/${fishName}_huge.png`);
+			},
 			updateGem() {
 				this.gemCounter = 0;
 				for(let fish in this.fishValue) {
